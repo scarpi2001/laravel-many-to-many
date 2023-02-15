@@ -19,12 +19,12 @@ class Product extends Model
 
     public function categories() {
 
-        $this -> belongsToMany(Category::class);
+        return $this -> belongsToMany(Category::class);
     }
 
-    public function typologies() {
+    public function typology() {
         
-        $this -> belongsTo(Typology::class);
+        return $this -> belongsTo(Typology::class);
     }
 
     
